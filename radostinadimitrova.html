@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    @import url('//https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+    html {
+      font-family: 'Raleway', 'Helvetica', arial, sans-serif;
+    }
+
+    body {
+      margin: 0 auto;
+      font-size: 100%;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    h3 {
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 2em;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      max-width: 800px;
+     background-image: -webkit-linear-gradient(left, #f0f0f0, #cccccc, #f0f0f0);
+     background-image: -o-linear-gradient(left, #f0f0f0, #cccccc, #f0f0f0);
+     background-image: linear-gradient(to right, #f0f0f0, #cccccc, #f0f0f0);
+    }
+
+    p {
+      letter-spacing: 2px;
+      line-height: 2;
+      text-align: left;
+      font-size: 18px;
+      padding: 5px;
+      text-indent: 30px;
+    }
+
+    #background {
+      background: #ccc url("https://images.unsplash.com/photo-1508615070457-7baeba4003ab?auto=format&fit=crop&w=1350&q=80") no-repeat center center fixed;
+      background-size: cover;
+    }
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .fa-arrow-up:hover {
+      transition: none;
+    }
+
+    nav {
+      height: 3em;
+      line-height: 2.3em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 600;
+      display: inline-block;
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+      border: 0;
+      font-family: 'Raleway', 'Helvetica', arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      -webkit-transform: translateZ(0);
+    }
+
+    nav.nav_closed {
+      overflow: hidden;
+    }
+
+    a#menu {
+      float: right;
+      border: 1px solid #c8daea;
+      color: #c8daea;
+      width: 4em;
+      margin-top: 5px;
+      margin-right: 15px;
+      font-weight: 300;
+      margin-bottom: 6px;
+      text-decoration: none;
+    }
+
+    a#menu:hover {
+      background: rgba(255,255,255,0.4);
+      color: #fff;
+      border: 1px solid #fff;
+      font-weight: 600;
+    }
+    /*navlist*/
+    ul#navlist {
+      clear: right;
+      list-style: none;
+      font-weight: 300;
+    }
+
+    nav.nav_closed ul#navlist {
+      display: none;
+    }
+
+    nav.nav_open {
+      overflow: visible;
+      background: rgba(0,0,0,0.85);
+    }
+    nav.nav_open ul#navlist {
+      display: block;
+      background: rgba(0,0,0,0.85);
+    }
+
+    nav.nav_open a#menu {
+      color: #fff;
+      background: #999;
+    }
+    nav ul#navlist li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-top: 1px #ccc solid;
+      color: #c8daea;
+      text-decoration: none;
+    }
+    nav ul#navlist li a:hover {
+      background: #009ee6;
+      color: #fff;
+      text-decoration: none;
+    }
+    section#page-header {
+      height: 100vh;/*vh is viewport height*/
+      width: 100%;
+      background: #ccc  url("https://images.unsplash.com/photo-1498550744921-75f79806b8a7?auto=format&fit=crop&w=1350&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      display: table;
+    }
+
+    section#page-header header {
+      width: 100%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    section.page-content div {
+      width: 85%;
+      max-width: 1024px;
+      margin: 1em auto;
+      padding-top: 2em;
+    }
+
+    section#profile div {
+      margin-top: 0;
+    }
+
+    .profile-pic {
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 30px;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+    }
+
+    .profile-box {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-sizing: border-box;
+        width: 550px;
+        height: 550px;
+        margin: 0 auto;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .name {
+      font-weight: 700;
+      letter-spacing: 6px;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-top: 40px;
+      color: #fff;
+    }
+
+    i {
+    border-radius: 50%;
+    }
+
+    i:hover {
+    transform: scale(1.2);
+    }
+
+
+    i.fa {
+    		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    		transition: color .2s ease, background-color .2s ease, transform .3s ease;
+        color: #fff;
+        width: 25px;
+        height: 25px;
+    }
+    i.fa:after {
+    		position: absolute;
+    		border-radius: 50%;
+    		transition: all .3s ease;
+    }
+
+    i.fa:hover:after {
+      transform: scale(1);
+    }
+
+    i.fa:nth-of-type(1) {
+    		background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    i.fa:nth-of-type(1):hover {
+      color: #4da6ff;
+
+    }
+
+    i.fa:nth-of-type(1):after {
+      color: #4da6ff;
+    }
+
+    i.fa:hover{
+      background-color: #f2f2f2;
+      transform: rotate(360deg);
+    	cursor: pointer;
+    }
+
+    @media (min-width:30px) {
+    	i.fa {
+    		padding:20px;
+    		margin:10px;
+    		font-size:1.5rem;
+    	}
+    }
+
+    .hobbies {
+          text-align: center;
+          margin-top: 0;
+          display: flex;
+          max-width: 300px;
+          width: 100%;
+    }
+
+    .favorite {
+     text-align: center;
+    }
+
+    .container {
+    		max-width: 55%;
+        margin: 0 auto;
+    		position: relative;
+    		top: 50%;
+    		box-sizing: border-box;
+    }
+
+    .bar-title {
+    	font-weight: 700;
+    	text-transform: uppercase;
+    	font-size: 17px;
+    	text-align: right;
+    	color: #fff;
+    	margin: 0 0 20px 0;
+    }
+
+    .bar {
+    	background-color: #fff;
+    	width: 100%;
+    	height: 17px;
+    	margin-bottom: 20px;
+    }
+
+    .bar-inner {
+    	background-color: rgb(77, 166, 255);
+      font-size: 17px;
+     	width: 0%;
+    	height: 100%;
+    	position: relative;
+    	-webkit-transition: width 1000ms linear;
+    	-moz-transition: width 1000ms linear;
+    	transition: width 1000ms linear;
+    }
+
+    .bar-inner:after {
+    	position:absolute;
+    	right: 2.5%;
+    	content: attr(data-percent);
+    	line-height: 40px;
+    	color: #fff;
+    	font-weight: 700;
+    }
+
+    .email {
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    }
+
+    .email:hover {
+    transform: scale(1.2);
+    transition: .2s ease-in;
+    }
+
+    .follow {
+      text-align: left;
+      letter-spacing: 4px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .quote {
+        padding-top: 10px;
+        font-style: italic;
+        margin-top: 6em;
+    }
+
+    .text {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      transition: .2s;
+    }
+</style>
+  </head>
+  <body>
+    <nav class="nav_closed">
+      <a href="#mainnav" id="menu">MENU</a>
+      <ul id="navlist">
+        <li><a href="#page-header">home</a></li>
+        <li><a href="#profile">profile</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#proud">most proud</a></li>
+        <li><a href="#prefer">prefer languages</a></li>
+        <li><a href="#inspiration">udacity inspiration</a></li>
+        <li><a href="#interests">interests</a></li>
+        <li><a href="#favorite">favorite websites</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+      <section id="page-header">
+        <header>
+        <div class="profile-box">
+          <img src="profile-pic.jpg" class="profile-pic" alt="profile-pic">
+          <h1 class="name">Radostina Dimitrova</h1>
+          <h2>Front-End Web Developer Beginner</h2>
+          </div>
+        </header>
+      </section>
+
+    <!--profile section-->
+  <div id="background">
+    <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <section id="profile" class="page-content">
+        <div>
+          <header>
+            <h3>Summary</h3><hr>
+          </header>
+            <p>I live in Varna, Bulgaria, close to the seaside. I'm working in a law firm, like an accountant. I'm a Bachelor of Statistics and a Master in Corporate Finance from University of economics - Varna. I am a beginner in web development.
+          </p>
+        </div>
+    </section>
+    <section id="experience" class="page-content">
+    <div>
+      <header>
+        <h3>Life Experience</h3><hr>
+      </header>
+        <p>As i travelled a lot in the past few years I've learned so much for the other cultures and religions. But maybe the most useful thing I learned is how can I coordinating travel schedules, ensuring effective time management, and overcoming language barriers.
+      </p>
+    </div>
+</section>
+<section id="proud" class="page-content">
+    <div>
+      <header>
+        <h3>Most Proud Of</h3><hr>
+      </header>
+        <p><strong><em>Travelled the world:</em></strong><br> Amongst the trips: almost 2,000 km by scooter through few Indonesian islands like Bali, Lombok, Nusa Penida, and a few adventures by car, airplane and by train through Europe.
+      </p>
+  </div>
+</section>
+<section id="prefer" class="page-content">
+    <div>
+      <header>
+        <h3>Prefer Programming languages</h3><hr>
+      </header>
+      <p>Javascript is the language that can move the boring webpages, and it is the most popular, and CSS is great for stylings, animations, and other visualizations.
+      </p>
+  </div>
+</section>
+<section id="inspiration" class="page-content">
+    <div>
+      <header>
+        <h3>Udacity Community Inspiration</h3><hr>
+      </header>
+      <p>My inspiration is all success stories of other students who have already gone through this challenge.
+      </p>
+    </div>
+    <div>
+      <header>
+        <h3>What brought me here</h3><hr>
+      </header>
+        <p>My passion about computer technologies brought me in Udacity as well as my desire to change my job, and to build my life experience. But first of all, I had seen so many times this opportunity in the news feed on my facebook that I decided to be brave and just try.
+      </p>
+    </div>
+</section>
+<section id="interests" class="page-content">
+  <div class="interests">
+    <h3><i class="fa fa-trophy" aria-hidden="true"></i>Interests</h3><hr>
+    <div class="hobbies">
+      <div class="travel"><i class="fa fa-globe" aria-hidden="true"></i>
+        <span>Travel</span></div>
+      <div class="music"><i class="fa fa-music" aria-hidden="true"></i>
+        <span>Music</span></div>
+      <div class="game"><i class="fa fa-gamepad" aria-hidden="true"></i>
+        <span>Games</span></div>
+      <div class="movie"><i class="fa fa-film" aria-hidden="true"></i>
+        <span>Movies</span></div>
+      <div class="shopping"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <span>Shopping</span></div>
+    </div>
+  </div>
+</section>
+<section id="favorite" class="page-content">
+    <div>
+      <header>
+        <h3>Favorite websites</h3><hr>
+      </header>
+        <p>Some of my favorite websites are YouTube, Pinterest, i like very much Amazon, because there I can find so many useful and fun things. They are easy to navigate and mobile-friendly.
+      </p>
+    <div class="favorite"><a href="https://www.facebook.com/radostinnadimitrova" title="Youtube" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com" title="Pinterest" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+      <a href="https://www.amazon.com" title="Amazon" target="_blank"><i class="fa fa-amazon" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+<section id="skills" class="">
+    <div>
+      <header>
+        <h3><i class="fa fa-code"></i>Skills learned from Udacity</h3><hr>
+      </header>
+      <div class="container">
+        <h4 class="bar-title">
+            HTML
+          </h4>
+          <div class="bar">
+            <div class="bar-inner" data-percent="80%"></div>
+          </div>
+          <h4 class="bar-title">
+            CSS
+          </h4>
+          <div class="bar">
+            <div class="bar-inner" data-percent="70%"></div>
+          </div>
+          <h4 class="bar-title">
+            Javascript
+          </h4>
+          <div class="bar">
+            <div class="bar-inner" data-percent="50%"></div>
+          </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="page-content">
+    <div>
+      <header>
+        <h3>Contact</h3><hr>
+      </header>
+<div class="follow">Follow
+<div class="social">
+  <a href="https://www.facebook.com/radostinnadimitrova" title="Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+  <a href="https://www.instagram.com/radostinnadimitrova" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/radostinadim83" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+  <a href="https://codepen.io/dashboard" title="Codepen" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+  <a href="https://github.com/cristalnaya" title="Github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/in/radostina-dimitrova" title="Linkedin" target="_blank"><i class="fa  fa-linkedin" aria-hidden="true"></i></a>
+</div>
+<div class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i>r********a@gmail.com</div>
+</div>
+</div>
+</section>
+<section class="page-content">
+    <div>
+      <header class="quote">
+        <h4>Quote</h4>
+      </header>
+        <p class="text"><em><q>There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.</q> - Milton Glaser</em></p>
+  </div>
+</section>
+</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+	$("#menu").click(function() {
+		$("nav.nav_closed").toggleClass("nav_open");
+	});
+	$("nav ul li a").click(function() {
+		$("nav.nav_open").removeClass("nav_open");
+		});
+	});
+
+(function(document) {
+	var _bars = [].slice.call(document.querySelectorAll('.bar-inner'));
+_bars.map(function(bar, index) {
+	setTimeout(function() {
+			bar.style.width = bar.dataset.percent;
+		}, index * 1000);
+	})
+})(document);
+
+$(document).ready(function() {
+	var btt = $('.back-to-top');
+	btt.on('click', function(e) {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 500);
+		e.preventDefault();
+	});
+	$(window).on('scroll', function() {
+		var self =$(this),
+			height = self.height(),
+			top = self.scrollTop();
+
+		if (top > height) {
+				if (!btt.is(':visible')) {
+						btt.show();
+				}
+		} else {
+				btt.hide();
+		}
+	});
+});
+</script>
+</body>
+</html>
