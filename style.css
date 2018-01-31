@@ -14,7 +14,7 @@ body {
 
 nav {
   position: relative;
-  display: block;
+  display: inline-blocks;
   width: 100%;
   z-index: 1;
 }
@@ -110,6 +110,7 @@ li > a:only-child:after {
   content: ''; 
 }
 
+
 .menu-icon {
   width: 100%;
   background:  #254441;
@@ -131,8 +132,6 @@ section {
   border: 2px solid #333;
   background-color: #fff;
   box-shadow: 20px 20px 10px 10px rgba(100, 100, 100, 0.7) inset;
-
-
 }
 
 /****Anchors*****/
@@ -148,6 +147,10 @@ section {
   color: white;
   text-shadow: 2px 2px 3px #000000; 
   font-weight: 700;
+
+}
+.anchors:after {
+    text-decoration: none;
 
 }
 .anchors:hover {
@@ -207,6 +210,7 @@ section {
 
 #eight {
   grid-area: eight;
+
 }
 
 #nine {
@@ -245,7 +249,7 @@ section {
 /*****Grid******/
 .main {
   width: 80%;
-  height: 80%;
+  max-height: 80%;
   margin: auto;
   padding: 0;
   background-position: center;
@@ -263,6 +267,7 @@ section {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 20px 20px 50px 50px rgba(100, 100, 100, 0.7) inset;
+
 }
 .project {
   font-size: 1.2em;
@@ -277,20 +282,20 @@ img {
 }
 footer {
   position: fixed;
-  display: block;
+  display: flex;
   width: 100%;
   margin: 0;
-  margin-top: 10px;
   border: 2px solid #333;
   background-color: rgba(200, 200, 200, 0.3);
-  color: #aaa;
+  color: #fff;
   display: flex;
   justify-content: space-around;
 }
 /****Media queries*****/
 
 @media all and (max-width: 768px) {
-  #logo {
+
+ #logo {
     display: block;
     padding: 0;
     width: 90vw;
@@ -320,7 +325,8 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
-  }
+    }
+  
   .menu-icon {
     display: block;
 
@@ -340,9 +346,9 @@ footer {
   clear: both;
   float: left;
   display: none;
-}
+ }
+  }
 
-}
 
 @media all and (max-width : 330px) {
 
@@ -350,25 +356,21 @@ footer {
     display:block;
     width: 94%;
   }
-.logo {
-  visibility: hidden;
-  clear: both;
-  float: left;
-  display: none;
-}
-#logo {
-  visibility: hidden;
-  clear: both;
-  float: left;
-  display: none;
-}
+
 }
 @media screen and (min-width: 1000px) {
 
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+  }
  .main {
     width: 80%;
     height: 80%;
-    margin: auto;
+    margin-top: 10px;
     padding: 0;
     background: url("https://github.com/Lenuza/udacity/blob/master/images/new/bulgarie52_small-500_small.png?raw=true")
       no-repeat;
@@ -391,5 +393,31 @@ footer {
     width: 90%;
     margin-top: 10px;
   }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    color: #fff;
+    z-index: 1;
+    list-style: none;
+    text-align: left;
+  }
+
+  .dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
 }
 
