@@ -145,7 +145,16 @@ section {
   height: 100%;
   text-indent: 25%;
   text-align: center;
-  color: #333; /***********NOT WORKING*******/
+  color: white;
+  text-shadow: 2px 2px 3px #000000; 
+  font-weight: 700;
+
+}
+.anchors:hover {
+  color: white;
+  text-shadow: 4px 4px 6px #000000; 
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /**Grid cell parameters*****/
