@@ -14,7 +14,7 @@ body {
 
 nav {
   position: relative;
-  display: inline-blocks;
+  display: inline-block;
   width: 100%;
   z-index: 1;
 }
