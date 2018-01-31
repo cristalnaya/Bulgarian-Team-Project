@@ -387,5 +387,9 @@ footer {
       "nine ten eleven twelve"
       "thirteen fourteen fifteen sixteen";
   } 
+  footer {
+    width: 90%;
+    margin-top: 10px;
+  }
 }
 
