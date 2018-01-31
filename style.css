@@ -332,28 +332,7 @@ footer {
   float: left;
   display: none;
 }
-.main {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-    padding: 0;
-    background: url("https://github.com/Lenuza/udacity/blob/master/images/new/bulgarie52_small-500_small.png?raw=true")
-      no-repeat;
-    /*** map is from http://d-maps.com/*/
-    background-position: center;
-    background-size: 90% 100%;
-    background-color: #999;
-    display: grid;
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-      "one two three four"
-      "five six seven eight"
-      "nine ten eleven twelve"
-      "thirteen fourteen fifteen sixteen";
-  }
+
 }
 
 @media all and (max-width : 330px) {
@@ -374,5 +353,30 @@ footer {
   float: left;
   display: none;
 }
+}
+@media screen and (min-width: 1000px) {
+
+ .main {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 0;
+    background: url("https://github.com/Lenuza/udacity/blob/master/images/new/bulgarie52_small-500_small.png?raw=true")
+      no-repeat;
+    /*** map is from http://d-maps.com/*/
+    background-position: center;
+    background-size: 90% 100%;
+    background-color: #999;
+    display: grid;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "one two three four"
+      "five six seven eight"
+      "nine ten eleven twelve"
+      "thirteen fourteen fifteen sixteen";
+  } 
 }
 
