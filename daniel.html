@@ -6,7 +6,312 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> 
 	<title>Daniel Zandi Resume</title>
-	<link rel="stylesheet" href="style.css">
+	<style>
+	html{
+	font-family: 'Oxygen', sans-serif
+}
+body div section{
+	margin: 0;
+    padding: 0;
+}
+/* For desktop: */
+h1{
+	margin: 0;
+	text-align: center;
+	font-size: 50px;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    margin:0;
+
+}
+.nav{
+}
+.menu{
+	display: inline-block;
+}
+.menu a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+.active{
+	background-color: #02b3e4;
+}
+.box{
+vertical-align: middle;
+margin: 0 auto;
+}
+img{
+ 	border-radius: 8px;
+    max-width: 300px;
+    height: auto;
+	vertical-align: middle;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+section#page-header{
+	background-image: url("https://raw.githubusercontent.com/danijun96/Udacity-BG-project/master/mountains_lake_haze_morning_cool_dawn_steam_boat_pirs_62300_1280x900.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+	margin: 0;
+    padding: 0;
+    height: 600px;
+    max-width:2450px;
+
+
+}
+hr{
+	 border: 0; height: 1px; width:75%;background: #333; background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+p{
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+section#profile{
+	background-color: #f2f2f2; 
+	height: 200px;
+    max-width:2000px;
+}
+
+section#experience{
+	background-color: #f2f2f2; 
+	height: 200px;
+    max-width:2000px;
+}
+section#programming-lang{
+	background-color: #f2f2f2; 
+	height: 200px;
+    max-width:2000px;
+}
+section#interests{
+	background-color: #f2f2f2; 
+	height: 200px;
+    max-width:2000px;
+}
+section#favorite{
+	background-color: #f2f2f2; 
+	height: 200px;
+    max-width:2000px;
+}
+
+section#contact{
+	background-color: #f2f2f2; 
+	height: 200px;
+    max-width:2000px;
+}
+.programming{
+	list-style-type: none;
+    overflow: hidden;
+    background-color:#f2f2f2;
+    margin:0;
+    text-align: center;
+	vertical-align: middle;
+
+
+}
+.prog{
+	display: inline-block;
+	list-style-type: none;
+    overflow: hidden;
+    background-color:#f2f2f2;
+    margin:0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    font-size: 22px;
+    border:2px;
+    text-align: center;
+
+
+    margin: 0 auto;
+    margin-top: 0px;
+    height: auto;
+    background: #F2F2F2;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+    border-radius: 3px/6px; 
+
+
+}
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+     -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+}
+.btn:hover{
+	background-color: #02b3e4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.btn:active{
+		background-color: black;
+
+}
+.icon {
+  display: none;
+}
+
+/* For smaller devices: */
+@media screen and (max-width: 650px){
+.navigation li:not(:first-child) {display: none;}
+  .navigation li.icon {
+    float: right;
+    display: block;
+  }
+}
+ 
+@media screen and (max-width: 600px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+.navigation.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navigation{
+  	width: 100%;
+  	padding-left: 0;
+  }
+  .navigaiton a{
+  	width: 100%;
+  }
+  .menu{
+  	width: 100%;
+  	padding: 0;
+  	margin: 0;
+  }
+.icon{
+
+	color: #f2f2f2;
+	float: right;
+	display: block;
+}
+img{
+ 	border-radius: 8px;
+    max-width: 60%;
+    height: auto;
+	vertical-align: middle;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+.firstP{
+	font-size: 18px;
+	text-align: center;
+	vertical-align: middle;
+	color:#f2f2f2;
+
+}
+h1{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+
+}
+.prog{
+	display:block;
+	list-style-type: none;
+    overflow: hidden;
+    background-color:#f2f2f2;
+    margin:0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    border:2px;
+    text-align: center;
+    width: 100%
+
+    margin: 0 auto;
+    margin-top: 0px;
+    height: auto;
+    background: #F2F2F2;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #fff inset,
+              -1px -1px 2px #fff inset;
+    border-radius: 3px/6px; 
+
+
+}
+.programming{
+	list-style-type: none;
+    overflow: hidden;
+    background-color:#f2f2f2;
+    margin:0;
+    text-align: center;
+	vertical-align: middle;
+	padding: 0;
+
+
+}
+section#programming-lang{
+	width: 100%;
+	height: 100%;
+
+}
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%
+}
+.btn:hover{
+	background-color: #02b3e4;
+    border: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px;
+    cursor: pointer;
+}	
+	</style>
 </head>
 <body>
     <nav class="nav">
