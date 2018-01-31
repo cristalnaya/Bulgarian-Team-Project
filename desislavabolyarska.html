@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  font-variant:initial;
+  font-size:large;
+  text-align: center;
+  background-image: url("https://www.colourbox.com/preview/23310840-line-coding-white-seamless-pattern.jpg");
+    margin: 0;
+}
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+  width: 600px;
+  height: 150px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+p.outset {
+  border-style: outset;
+    border: 2px solid black;
+    outline: #00aabb solid 10px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.speech-bubble:after {
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 50%;
+  	width: 0;
+  	height: 0;
+  	border: 36px solid transparent;
+  	border-bottom-color: #00aabb;
+  	border-top: 0;
+  	border-left: 0;
+  	margin-left: -18px;
+  	margin-top: -36px;
+}
+.rcorners {
+    border-radius: 25px;
+    background: #bdcebe;
+    padding: 20px;
+    width: 600px;
+    height: 150px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  .header {
+      background-color: #00aabb;
+      padding: 20px;
+      text-align: center;
+      border: 2px solid black;
+      position: relative;
+  height: 500px;
+  background-image: linear-gradient(#00aabb, #ffffff);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+h1 {
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+header h1 {
+  color: white;
+}
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+.description {  border: 2px solid black;
+  outline: #00aabb solid 10px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.footer {
+  padding: 1em;
+   color: black;
+   background-color: #00aabb;
+   clear: left;
+   text-align: center;
+}
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2><div class="header">
+    Desislava Bolyarska
+<p><img src="http://p4.s98.rscdn.net/z/scontent.xx.fbcdn.net/v/t1.0-1/c0.0.320.320/p320x320/24993602_10203877654979204_6210759012705538856_n.jpg?oh=72932909e680debca315e14fb9c0ee09&oe=5ACFDDBB"></p>
+</div></h2>
+<div class="description">
+<div class="row">
+  <div class="column">
+    <h2><div class="rcorners">Describe your passions...hobbies- spare time and so on... </div></h2>
+    <p><div class="speech-bubble">Vegeterian, trying to live healthy live, gym lover. Reading books(my favourite book-Game of Thrones, all of them:)</div></p>
+  </div>
+  <div class="column">
+    <h2><div class="rcorners">Describe your life experience</div></h2>
+    <p><div class="speech-bubble">Bulgarian living in London, working as a Sales representative with hope to move soon into IT field.</div></p>
+  </div>
+  <div class="column">
+    <h2><div class="rcorners">What are you most proud in your life</div></h2>
+    <p><div class="speech-bubble">I think at the moment is that I won a scholarship from Udacity</div></p>
+  </div>
+  <div class="row">
+  <div class="column">
+    <h2><div class="rcorners">How you came here?</div></h2>
+    <p><div class="speech-bubble">I was lucky that I saw the Udacity advertising on Facebook. So I applied and here I am.</div></p>
+  </div>
+  <div class="column">
+    <h2><div class="rcorners">What did you learn from this course?</div></h2>
+    <p><div class="speech-bubble">A lot! In this course everything is so easy to understand that I feel less newbie in coding:)</div></p>
+  </div>
+  <div class="column">
+    <h2><div class="rcorners">What excites or interests you about coding?</div></h2>
+    <p><div class="speech-bubble">The most exciting thing about coding for me is creating.I love the idea that just with few lines of code I can create such a great things!</div></p>
+  </div>
+  <div class="row">
+  <div class="column">
+    <h2><div class="rcorners">Who inspires you in the front-end Udacity community?</div></h2>
+    <p><div class="speech-bubble">All of the people in the community! They are all so nice and always trying to help each other, which for me is really inspiring!</div></p>
+  </div>
+  <div class="column">
+    <h2><div class="rcorners">Which code language you preffer? And why?</div></h2>
+    <p><div class="speech-bubble">I think HTML, because I have little more experience and I feel bit more confident with it.</div></p>
+  </div>
+  <div class="column">
+    <h2><div class="rcorners">More about me</div></h2>
+    <p><div class="speech-bubble">26 years old, borned in Momchilgrad- South Bulgaria, lived 8 years in our capital Sofia.My fav things- traveling and chocolate.</div></p>
+  </div>
+</div>
+</div>
+<hr>
+
+</body>
+</html>
