@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Anna Ikonomova</title>
+<link rel="stylesheet" href="https://github.com/anikonomova/bg/blob/master/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".title2").mouseenter(function(){
+        alert("Hi! Nice to meet you!");
+    });
+});
+</script>
+</head>
+<body>
+<div class="back">
+  <h1 class="name">Anna Ikonomova</h1>
+    <img class=circle src="Anna Ikonomova1.jpg" alt="Anna Ikonomova">
+  </div>
+  <div><h3 class="title2">Who are you?</h3>
+  <p>My name is Anna Ikonomova and I am born in Plovdiv, Bulgaria. I am a Bachelor of Economics and I worked in a bank. Now I'm taking care of my baby boy and I'm searching for new horizons.</p>
+</div>
+<div><h3 class="title3">Interests</h3>
+<p>Extreme sports, Mountain Biking, Skiing, Musik and I play the piano.</p>
+<img class="ski" src="ski.jpg" alt="Anna skiing">
+</div>
+<div><h3 class="title3">Motivation</h3>
+<p>I am here (Udacity), because I want to be a part of the changing world. That's the new field, in which I want to build a career.</p>
+</div>
+<div><h3 class="title3">Experience</h3>
+  <p>After I graduated I worked for 4 years as a banker. I am a total beginner in web development.</p>
+</div>
+<div><h3 class="title3">How you came here?</h3>
+<p>I saw an advertising in Facebook.</p>
+</div>
+<div><h3 class="title3">Most proud of</h3>
+<p>My son.</p>
+<img class="son" src="son.jpg" alt="Anna's son'"></div>
+<div>
+  <h3 class="title3">Future plans</h3>
+<p>To start a career. I'm interested in front end development, SEO and digital marketing.</p></div>
+<div>
+<h3 class="title3">Which code language you preffer? And why?</h3>
+<p>HTML and CSS are easier for me, but I am a beginner.</p>
+<h3 class="title3">Favourite websites</h3>
+<p>Facebook, Youtube, Amazon, Ebay</p>
+<h3 class="title3">Contact</h3>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a href="https://www.facebook.com/ani.strandjeva" class="fa fa-facebook"></a>
+<a href="https://plus.google.com/u/0/117242742830980585073"  class="fa fa-google"></a>
+<script src="add.js"></script>
+</body>
+</html>
