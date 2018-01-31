@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veselin Tonev</title>
+    <style>
+    /* Layout */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Regular'), local('Barlow-Regular'), url(https://fonts.gstatic.com/s/barlow/v1/m4mkzFgzyAU93qx0-DUx_Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Abel Regular'), local('Abel-Regular'), url(https://fonts.gstatic.com/s/abel/v8/brdGGFwqYJxjg2CD1E9o7g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+body {
+    font-family: Abel, sans-serif;
+    font-size: 17px;
+	color: #2a3845;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 632px;
+	border-left: 1px solid #D4E6B5;
+	border-right: 1px solid #D4E6B5;
+}
+
+#header {
+	margin: 0 1px;
+}
+
+#list {
+	margin-top: 10px;
+	list-style-type: circle;
+}
+
+.description {
+	font-family: Abel;
+	font-size: 20px;
+	color:#ff5733;
+}
+
+.links {
+	list-style-type: circle;
+	text-decoration: none;
+	color: #ff5733;
+}
+
+.links:hover {
+	text-decoration-line: underline;
+}
+
+#bg {
+	height: 36px;
+}
+
+#main-content {
+	margin: 0 auto;
+}
+
+#main-image {
+	text-align: center;
+}
+
+#left-column {
+	width: 300px;
+	padding: 0 30px 30px;
+	float: left;
+}
+
+#right-column {
+	width: 270px;
+	float: right;
+}
+
+.sidebar {
+	width: 218px;
+	margin: 0 auto;
+	padding: 10px 25px;
+}
+
+#footer {
+	background:#f7f7f7;
+	border-top:1px solid #f0e9eb;
+	padding:10px 15px;
+	clear:both;
+}
+
+/* Global Styling */
+
+h1 {
+	color:#ff5733;
+	font-family: Abel, sans-serif;
+	font-size: 20px;
+}
+
+h2 {
+	color:#7a2e40;
+	margin:20px 0 10px;
+	padding-bottom:10px;
+	font:normal 17px Georgia, serif;
+	border-bottom:1px solid #efece7;
+}
+
+h3 {
+	color:#7a2e40;
+	margin:10px 0;
+	padding-bottom:10px;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	border-bottom:1px solid #efece7;
+}
+
+ul {
+	padding:0;
+	margin:0 0 0 17px;
+	list-style:square url('http://img525.imageshack.us/img525/1890/bulletr.gif');
+}
+
+.box {
+	background:#f7f7f7;
+	border:1px solid #f0e9eb;
+	padding:15px;
+}
+
+#nav {
+	background-image: -webkit-linear-gradient(#D4E6B5, #AFC97E);
+	padding:10px 10px;
+	text-align: center;
+	color:#800000;
+}
+
+#nav a:visited, #nav a:link {
+	text-decoration:none;
+	color:#f6dde3;
+}
+
+#nav a:hover {
+	text-decoration:underline;
+	color:#f6dde3;
+}
+
+#logo {
+	font-family: Barlow, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	color:#ffF;
+}
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    
+	<div id="header">
+		<div id="nav">
+			<div>
+				<h1 id="logo">Welcome to Veselin Tonev's Webpage</h1>
+			</div>
+		</div>
+		<div id="bg"></div>
+	</div>
+	
+	<div id="main-content">
+		<div id="left-column">
+			<div class="box">
+        		<h1>What You'll Find Here</h1>
+        		<p>This is my space. Here are some of my interests: </p>
+				<ul id="list">
+					<li>Coding</li>
+					<li>Playing football</li>
+					<li>Hanging out with friends</li>
+					<li>Enjoying art</li>
+					<li>Swimming</li>
+				</ul>
+			</div>
+			<h1>Something About Me</h1>
+			<p>Hi! I am from the beautiful city of Plovdiv, Bulgaria. I'm 21 years old and study finance and accounting. I have played football since the age of 7. You can probably tell that I like many different things that don't really fit into a stereotype. Add to that I want to have a career in web development and you have a good picture of me. So, yes, I take interest in a lot of different things and am quite open-minded.			
+			</p>
+		</div>
+		<div id="right-column">
+			<div id="main-image"><img src="https://raw.githubusercontent.com/veselinn16/bg-project/master/me.JPG" width="160" height="188" /></div>
+			<div class="sidebar">
+				<h3 class="description">Passions</h3>
+				<p>My favorite singer is Frank Ocean. My favorite painting is "The Kiss" by Gustav Klimt</p>
+				<h3 class="description">Find Me Elsewhere</h3>
+				<div class="box">
+					<ul>
+						<li class="links"><a class="links" href="https://www.facebook.com/profile.php?id=100000450630612" target="_blank">Facebook</a></li>
+						<li class="links"><a class="links" href="https://www.instagram.com/vesellintonev/" target="_blank">Instagram</a></li>
+						<li class="links"><a class="links" href="https://www.linkedin.com/in/veselin-tonev-173b09152/" target="_blank">LinkedIn</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Copyright &copy; 2017 Veselin Tonev. All rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>
