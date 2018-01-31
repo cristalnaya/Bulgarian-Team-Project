@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+	<title>Konstantin Stamov </title>
+	<style>
+		.content {
+			background-color: rgb(204, 242, 188, .6);
+			width: 800px;
+			border-style: groove;
+			border-width: 15px;
+			border-color: rgb(94, 163, 60);
+			border-radius: 15px;
+			margin: auto;
+			font-family: sans-serif;
+		}
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+		p {
+			display: inherit;
+		}
+		#header img {
+			height: 200px;
+			display: block;
+			margin: auto;
+			border-radius: 40px;
+		}
+		#header h1, #header p {
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		table {
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			text-align: justify;
+		}
+		td {
+			background-color: white;
+			height: 80px;
+			border: 2px solid rgb(172, 180, 193);
+			border-radius: 10px;
+			padding: 10px;
+		}
+		table img {
+			display: block;
+			margin: auto;
+		}
+		td:hover {
+			background-color: pink;
+		}
+		#slideshow {
+			margin: 10px auto;
+			position: relative;
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			border-radius: 50px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+		}
+		#slideshow > div {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			bottom: 10px;
+		}
+		body {
+			background-image: url(images/background.jpg);
+			background-size: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div id="header">
+			<div id="slideshow">
+				<div>
+					<img src="images/Me.jpg" alt="Picture of Konstantin Stamov">
+				</div>
+				<div>
+					<img src="images/meWT.jpg" alt="Picture of Konstantin Stamov">
+				</div>
+				<div>
+					<img src="images/meNY.jpg" alt="Picture of Konstantin Stamov">
+				</div>
+			</div>
+		<h1 id="myName">Konstantin Stamov</h1>
+		<p id="me">Project Manager | Height:180 | Zodiac sign: Cancer</p></div>
+		<table id="table">
+			<tr>
+				<td id="passions"><abbr title="My passions in life"><img src="images/passion.jpg" alt="Boy with a hearth" width="100px"></abbr></td>
+				<td id="passionsText"><h3>My passions in life are Wing Tsun and Coding</h3><p>Wing Tsun is a Chinese martial art. The stance is like a piece of bamboo, firm but flexible, rooted but yielding. This structure is used to either deflect external forces or redirect them.<br>I am a beginner in coding but I love the idea of talking to the machines.</p>
+				</td>
+			</tr>
+			<tr>
+				<td id="way"><abbr title="How I got here"><img src="images/way.jpg" alt="My way" width="100px"></abbr></td>
+				<td id="wayText"><h3>From master's degree in Finance to HTML</h3><p>I've always been facinated by computers, but I've been more of a user than a creator. I guess I was presented with a lot of opportunities to change my work but I really stuck to this one.</p></td>
+			</tr>
+			<tr>
+				<td id="language"><abbr title="The programming language I prefer"><img src="images/languages.png" alt="My way" width="100px"></abbr></td>
+				<td id="languageText"><h3>Which is my favourite programming language?</h3><p>I honestly don't know. I've tried C, C#, but HTML is the only one with which I have actualy created something, javascript as well, but I think jQuery is very powerful library.</p></td>
+			</tr>
+			<tr>
+				<td id="movie"><abbr title="My favourite movie"><img src="images/movie.jpg" alt="My way" width="100px"></abbr></td>
+				<td id="movieText"><h3>My favourite movie of all times </h3><p>It is "Armour of God" with Jackie Chan. Probably because, bersides it is awesome, it brings back to me the feelings from my care free times and also it shows Jackie Chan at his best.</p></td>
+			</tr>
+			<tr>
+				<td id="band"><abbr title="My favourite band"><img src="images/band.jpg" alt="My way" width="100px"></abbr></td>
+				<td id="bandText"><h3>My favourite band</h3><p>It is Helloween.I love them since I was 10 years old, when the only western music we could get was coming from this kid from "Czechoslovakia", yes it was a country in the 80s. They are coming to Bulgaria, unfortunately I'll miss their concert in Sofia on 14th December 2017.</p></td>
+			</tr>
+		</table>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		var textColorOff = "black";
+		var textColorOn = "rgb(248, 252, 2)";
+		var cellColorOn = "rgb(116, 118, 124)";
+		var cellColorOff = "white";
+		var borderColorOn = "red";
+		var table = $("#table");
+		//var raws = $('#table tr').length;
+		//for (var i = 0; i < raws; i++) {
+		$('#table td:even').on( "mouseover", function() {
+  			$(this).closest("td").next().css( {"background-color": cellColorOn , "color": textColorOn } );
+  			$(this).css("border-color", borderColorOn);
+		});
+		$('#table td:even').on( "mouseleave", function() {
+  			$(this).closest("td").next().css( {"background-color": cellColorOff , "color": textColorOff } );
+  			$(this).css("border-color", "rgb(172, 180, 193)");
+		});
+		//};
+		/*My passions in life
+		$("#passions").on( "mouseover", function() {
+  			$("#passionsText").css( {"background-color": cellColorOn , "color": textColorOn } );
+  			$(this).css("border-color", borderColorOn);
+		});
+		$("#passions").on( "mouseleave", function() {
+  			$("#passionsText").css( {"background-color": cellColorOff , "color": textColorOff } );
+  			$(this).css("border-color", "rgb(172, 180, 193)");
+		});
+		//My way to this point
+		$("#way").on( "mouseover", function() {
+  			$("#wayText").css( {"background-color": cellColorOn , "color": textColorOn } );
+  			$(this).css("border-color", borderColorOn);
+		});
+		$("#way").on( "mouseleave", function() {
+  			$("#wayText").css( {"background-color": cellColorOff , "color": textColorOff } );
+  			$(this).css("border-color", "rgb(172, 180, 193)");
+		});
+		//My favourite programming language
+		$("#language").on( "mouseover", function() {
+  			$("#languageText").css( {"background-color": cellColorOn , "color": textColorOn } );
+  			$(this).css("border-color", borderColorOn);
+		});
+		$("#language").on( "mouseleave", function() {
+  			$("#languageText").css( {"background-color": cellColorOff , "color": textColorOff } );
+  			$(this).css("border-color", "rgb(172, 180, 193)");
+		});
+		//My favourite movie
+		$("#movie").on( "mouseover", function() {
+  			$("#movieText").css( {"background-color": cellColorOn , "color": textColorOn } );
+  			$(this).css("border-color", borderColorOn);
+		});
+		$("#movie").on( "mouseleave", function() {
+  			$("#movieText").css( {"background-color": cellColorOff , "color": textColorOff } );
+  			$(this).css("border-color", "rgb(172, 180, 193)");
+		});
+		//My favourite band
+		$("#band").on( "mouseover", function() {
+  			$("#bandText").css( {"background-color": cellColorOn , "color": textColorOn } );
+  			$(this).css("border-color", borderColorOn);
+		});
+		$("#band").on( "mouseleave", function() {
+  			$("#bandText").css( {"background-color": cellColorOff , "color": textColorOff } );
+  			$(this).css("border-color", "rgb(172, 180, 193)");
+		});
+*/
+		//Slideshow
+		$("#slideshow > div:gt(0)").hide();
+		setInterval(function() {
+			$('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			}, 3000);
+	</script>
+</body>
+</html>
