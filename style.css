@@ -18,8 +18,13 @@ nav {
   display: inline-block;
   width: 100%;
   z-index: 1;
-}
+  justify-content: space-around;
 
+
+}
+header {
+  background-color: #254441
+}
 
 nav:after {
   content: "";
@@ -46,7 +51,7 @@ background: #254441;
 }
 /*Styling the links*/
 nav a {
-  display: block;
+  
   padding: 14px 20px;
   color: #fff;
   letter-spacing: 2px;
@@ -98,7 +103,10 @@ li > a:only-child:after {
 }
 
 nav ul ul li:first-child {
- margin-top: 73px;
+ margin-top: 40px;
+}
+a {
+  font-size: 18px;
 }
 .menu-icon {
   width: 100%;
@@ -110,6 +118,7 @@ nav ul ul li:first-child {
   color: #fff;
   display: none;
 }
+
 
 .toggle,
 [id^=drop] {
@@ -229,9 +238,6 @@ section {
 
 #thirteen {
   grid-area: thirteen;
-   background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.2));
-  /* color will be added to the links directing to a page*/
-
 }
 
 #fourteen {
@@ -307,7 +313,6 @@ footer {
   }
   nav ul li {
     box-sizing: border-box;
-    display: block;
     width: 100%;
     text-align: center;
     }
@@ -317,8 +322,7 @@ footer {
 
   }
     nav ul li {
-    display: block;
-    width: 100%;
+      width: 100%;
     }
 
   }
@@ -331,7 +335,7 @@ footer {
   }
 footer {
   margin: auto;
-   position: fixed;
+  position: fixed;
 }
    
 }
@@ -343,8 +347,8 @@ footer {
     width: 90vw;
     height: 90vh;
     margin: auto;
-
   }
+
   h1 {
     font-size: 25px;
     font-weight: 700;
