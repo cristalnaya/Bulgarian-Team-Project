@@ -229,6 +229,9 @@ section {
 
 #thirteen {
   grid-area: thirteen;
+   background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.2));
+  /* color will be added to the links directing to a page*/
+
 }
 
 #fourteen {
