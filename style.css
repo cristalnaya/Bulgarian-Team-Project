@@ -19,7 +19,7 @@ body {
 nav {
   display: inline-block;
   width: 100%;
-  min-height: 40px;
+  min-height: 55px;
   background-color: #2f3036;
 }
 
@@ -43,15 +43,15 @@ li {
 /*Style for menu links*/
 li a {
     display: block;
-    min-width: 250px;
-    height: 40px;
+    min-width: 280px;
+    height: 55px;
     text-align: center;
-    line-height: 40px;
+    line-height: 55px;
     color: #fff;
     background: #2f3036;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 19px;
 }
 /*Hover state for top level links*/
 li:hover a {
@@ -61,9 +61,9 @@ li:hover a {
 li:hover ul a {
     background: #f3f3f3;
     color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    width: 240px;
 }
 /*Hover state for dropdown links*/
 li:hover ul a:hover {
@@ -291,6 +291,7 @@ footer {
 }
 footer a {
   text-decoration: none;
+  color: #000;
 }
 /****Media queries*****/
 
@@ -398,6 +399,4 @@ footer {
     margin: auto;
     margin-top: 10px;
   }
- 
-
 }
