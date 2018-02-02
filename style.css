@@ -16,6 +16,7 @@ body {
 }
 header {
   background: #2f3036;
+  height: 45px;
 }
 
 /*Strip the ul of padding and list styling*/
