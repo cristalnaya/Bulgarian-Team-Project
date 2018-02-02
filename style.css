@@ -1,3 +1,4 @@
+@import url('//https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 html, body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,8 @@ html, body {
 }
 body {
   font-family: 'Raleway', sans-serif;
+  background: url("https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat center center fixed;
+  background-size: cover;
   font-size: 18px;
   line-height: 20px;
   margin: 0;
@@ -105,11 +108,12 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 section {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
   border: 2px solid #333;
   background-color: #fff;
-  box-shadow: 20px 20px 10px 10px rgba(100, 100, 100, 0.7) inset;
+ box-shadow:  0 5px 30px rgba(100, 100, 100, 0.7) inset;
 }
 
 /****Anchors*****/
@@ -309,15 +313,18 @@ nav ul ul li:first-child {
     ul {
         position: static;
         display: none;
+
     }
     /*Create vertical spacing*/
     li {
         margin-bottom: 1px;
         white-space: nowrap;
+
     }
     /*Make all menu links full width*/
     ul li, li a {
         width: 100%;
+
     }
     /*Display 'show menu' link*/
     .show-menu {
@@ -352,17 +359,18 @@ footer {
     line-height: 1.5;
     letter-spacing: 2px;
     width: 90vw;
-    height: 90vh;
+    height: 80vh;
     margin: auto;
   }
 
   h1 {
     font-size: 27px;
     font-weight: 700;
+    margin: auto;
   }
  .main {
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     margin-top: 10px;
     padding: 0;
     background: url("https://github.com/Lenuza/udacity/blob/master/images/new/bulgarie52_small-500_small.png?raw=true")
