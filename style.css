@@ -14,6 +14,9 @@ body {
   margin: 0;
   padding: 0;
 }
+header {
+  background: #2f3036;
+}
 
 /*Strip the ul of padding and list styling*/
 nav {
@@ -90,7 +93,6 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
     color: #fff;
     background: #19c589;
