@@ -17,6 +17,7 @@ body {
 
 /*Strip the ul of padding and list styling*/
 nav {
+  position: relative;
   display: inline-block;
   width: 100%;
   min-height: 55px;
