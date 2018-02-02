@@ -17,23 +17,23 @@ body {
 
 /*Strip the ul of padding and list styling*/
 nav {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 100%;
-  min-height: 0;
+  min-height: 55px;
   background-color: #2f3036;
 }
 
 ul {
     list-style-type: none;
-    margin-top: -50px;
+    margin: 0;
     padding: 0;
     position: absolute;
     top: 0;
     z-index: 1;
 }
 nav ul ul li:first-child {
- margin-top: 100px;
+ margin-top: 51px;
 }
 /*Create a horizontal list with spacing*/
 li {
@@ -52,7 +52,7 @@ li a {
     background: #2f3036;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 18px;
 }
 /*Hover state for top level links*/
 li:hover a {
@@ -310,7 +310,7 @@ footer a {
     font-size: 30px;
   }
 nav ul ul li:first-child {
- margin-top: 50px;
+ margin-top: 0px;
 }
 
   /*Make dropdown links appear inline*/
@@ -323,6 +323,7 @@ nav ul ul li:first-child {
     /*Create vertical spacing*/
     li {
         margin-bottom: 1px;
+       
     }
     /*Make all menu links full width*/
     ul li, li a {
@@ -340,7 +341,7 @@ nav ul ul li:first-child {
     color: #2f3036;
     height: 40px;
     line-height: 40px;
-    width: 93%;
+    width: 90%;
     }
     
 }
