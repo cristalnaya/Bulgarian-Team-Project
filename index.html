@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Udacity Project</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Udacity Project</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	 <!--responsive navbar  with dropdown menus-->
@@ -16,28 +19,25 @@
         <div id="logo"Logo></div>
       <label for="drop" class="toggle">Menu</label>
         <input type="checkbox" id="drop"/>  
-      <div class="menu-icon">
-        <i class="fa fa-bars da-2x"></i>
-      </div>
-      <div class="menu">
-      <ul>
-        <li><a href="about.html">About the project</a></li>
-        <!--first dropdown menu--><li>
-         <label for="drop-1" class="toggle">Details on Bulgaria</label>
-         <a href="#details">Details on Bulgaria</a>
-         <input type="checkbox" id="drop-1"/>
-       <ul>
+      <nav>
+        <label for="show-menu" class="show-menu"><i class="fa fa-bars da-2x"></i></label>
+    <input type="checkbox" id="show-menu" role="button">
+     
+     <ul id="menu">
+        <li><a href="about.html">About the Project</a></li>
+        <!--first dropdown menu-->
+        <li>
+          <a href="#details">Details on Bulgaria</a>
+         <ul class="hidden">
         <li><a href="http://investsofia.com/en/it-sector-in-bulgaria-is-the-best-performing-industry-600-income-growth-for-10-years//" aria-label="Learn about ICT sector in Bulgaria" target="_blank">ICT Sector</a></li>
-        <li><a href="https://www.bgosoftware.com/blog/how-is-the-it-industry-changing-bulgaria/" aria-label="IT industry chnaging Bulgaria" target="_blank">IT industry</a></li>
+        <li><a href="https://www.bgosoftware.com/blog/how-is-the-it-industry-changing-bulgaria/" aria-label="IT industry chnaging Bulgaria" target="_blank">IT Industry</a></li>
       <li><a href="https://www.ft.com/content/f9a35122-44f4-11e6-9b66-0712b3873ae1" target="_blank">Another Article</a></li>
     </ul>
   </li>
   <!-- Second Tier Drop Down -->
   <li>
-    <label for="drop-2" class="toggle">Useful links</label>
-    <a href="#info">Useful links</a>
-    <input type="checkbox" id="drop-2"/>
-    <ul>
+     <a href="#info">Useful Links</a>
+     <ul class="hidden">
       <li><a href="https://www.w3.org/WAI/gettingstarted/" aria-label="Get started with website accessibility" target="_blank">Accessibility</a></li>
       <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" aria-label="Learn about Flexbox on CSS tricks site" target="_blank">Flexbox</a></li>
       <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" aria-label="Learn about Grid on CSS tricks site" target="_blank">Grid</a></li>
@@ -45,7 +45,7 @@
       <li><a href="https://css-tricks.com/absolute-positioning-inside-relative-positioning/" aria-label="Learn about relative and absolute position in CSS" target="_blank">CSS Positioning</a></li>
       </ul>
     </li>
-      </div>
+  </ul>
     </nav>
   </header>
   <section>
@@ -106,30 +106,7 @@
 <footer>
     <a href="http://d-maps.com/pays.php?num_pay=186&lang=en" aria-label="Go to the d-maps site" target="_blank">The map used in this site is from http://d-maps.com/</a>
   </footer>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script>
-//menu toggle-button
-$(document).ready(function() {
-    $(".menu-icon").on("click", function() {
-      $("nav ul").toggleClass("showing");
-    });
-});
-//scrolling effect
-$(window).on("scroll", function() {
-  if ($(window).scrollTop()) {
-      $('nav').addClass('black');
-  }
-  else {
-    $('nav').removeClass('black');
-  }
-  $("nav ul li a").click(function() {
 
-});
-
-})
-
-
-</script>
 </body>
 </html>
 
