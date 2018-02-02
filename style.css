@@ -310,7 +310,7 @@ footer a {
     font-size: 30px;
   }
 nav ul ul li:first-child {
- margin-top: 0px;
+ margin-top: 50px;
 }
 
   /*Make dropdown links appear inline*/
@@ -323,8 +323,6 @@ nav ul ul li:first-child {
     /*Create vertical spacing*/
     li {
         margin-bottom: 1px;
-        white-space: nowrap;
-
     }
     /*Make all menu links full width*/
     ul li, li a {
