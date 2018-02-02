@@ -14,15 +14,13 @@ body {
   margin: 0;
   padding: 0;
 }
-header {
-  height: 50px;
-}
+
 /*Strip the ul of padding and list styling*/
 nav {
   display: inline-block;
   width: 100%;
-  min-height: 50px;
-  background-color: #2f3036;
+  min-height: 40px;
+ 
 }
 
 ul {
@@ -46,9 +44,9 @@ li {
 li a {
     display: block;
     min-width: 250px;
-    height: 50px;
+    height: 40px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     color: #fff;
     background: #2f3036;
     text-decoration: none;
