@@ -20,7 +20,7 @@ nav {
   position: relative;
   display: inline-block;
   width: 100%;
-  min-height: 55px;
+  min-height: 0;
   background-color: #2f3036;
 }
 
