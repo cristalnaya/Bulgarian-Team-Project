@@ -33,7 +33,7 @@ ul {
     z-index: 1;
 }
 nav ul ul li:first-child {
- margin-top: 80px;
+ margin-top: 100px;
 }
 /*Create a horizontal list with spacing*/
 li {
