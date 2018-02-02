@@ -33,7 +33,7 @@ ul {
     z-index: 1;
 }
 nav ul ul li:first-child {
- margin-top: 51px;
+ margin-top: 60px;
 }
 /*Create a horizontal list with spacing*/
 li {
@@ -44,7 +44,7 @@ li {
 /*Style for menu links*/
 li a {
     display: block;
-    min-width: 280px;
+    min-width: 250px;
     height: 55px;
     text-align: center;
     line-height: 55px;
@@ -64,7 +64,7 @@ li:hover ul a {
     color: #2f3036;
     height: 50px;
     line-height: 50px;
-    width: 240px;
+    width: 210px;
 }
 /*Hover state for dropdown links*/
 li:hover ul a:hover {
