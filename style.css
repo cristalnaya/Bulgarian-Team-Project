@@ -3,7 +3,6 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
- 
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -11,118 +10,98 @@ body {
   line-height: 20px;
   margin: 0;
   padding: 0;
-
 }
 
+/*Strip the ul of padding and list styling*/
 nav {
-  position: relative;
   display: inline-block;
   width: 100%;
-  z-index: 1;
-}
-header {
-  background-color: #254441
+  min-height: 43px;
 }
 
-nav:after {
-  content: "";
-  display: table;
-  clear: both;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
-nav ul {
-  list-style: none;
-  float: right;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-nav.black ul {
-  background: #254441;
-}
-nav ul li {
-display: inline-block;
-padding: 20px;
-margin: 0;
-display: inline-block;
-float: left;
-background: #254441;
-}
-/*Styling the links*/
-nav a {
- 
-  padding: 14px 20px;
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 17px;
-  text-decoration: none;
-}
-
-nav ul li ul li:hover {
-  background: #000;
-   
-}
-nav ul li a:hover{
-  color: #fff;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: : #000;
-}
-/*change navbar width*/
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 10px;
-}
-/*display dropdown on hover*/
-nav ul li:hover > ul {
-  display:inherit;
-}
-
-/*first dropdown menu*/
-nav ul ul li {
-  width: auto;
-  float: none;
-  display: list-item;
-  position: relative;
-}
-/*second dropdown menu*/
-nav ul ul ul li {
-  position: relative;
-  top: -10px;
-  left: auto;
-}
-li > a:after { 
-  content:  ' +'; 
-}
-li > a:only-child:after { 
-  content: ''; 
-}
-
 nav ul ul li:first-child {
- margin-top: 40px;
+ margin-top: 50px;
 }
-a {
-  font-size: 17px;
+/*Create a horizontal list with spacing*/
+li {
+    float: left;
+    margin-right: 1px;
+    position: relative;
 }
-a:hover {
-  text-decoration: none;
+/*Style for menu links*/
+li a {
+    display: block;
+    min-width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
 }
-.menu-icon {
-  width: 100%;
-  background:  #254441;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
-  display: none;
+/*Hover state for top level links*/
+li:hover a {
+    background: #19c589;
 }
-
-
-.toggle,
-[id^=drop] {
-  display: none;
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+    width: 210px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
 }
 
 section {
@@ -258,6 +237,7 @@ section {
   width: 80%;
   height: auto;
   margin: auto;
+  text-decoration: none;
   padding: 0;
   background-position: center;
   background-size: 90% 100%;
@@ -275,12 +255,10 @@ section {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 20px 20px 50px 50px rgba(100, 100, 100, 0.7) inset;
 }
-.project {
-  font-size: 1.2em;
-  padding: 5%;
-  line-height: 1.5em;
-}
 
+.main a {
+  text-decoration: none;
+}
 img {
   float: right;
   width: 150px;
@@ -294,6 +272,7 @@ img {
 }
 footer {
   display: flex;
+  font-size: 12px;
   margin: auto;
   width: 100%;
   border: 2px solid #333;
@@ -303,70 +282,62 @@ footer {
   margin-top: 10px;
   text-decoration: none;
 }
-
+footer a {
+  text-decoration: none;
+}
 /****Media queries*****/
 
 @media all and (max-width: 768px) {
   body {
     font-size: 17px;
     line-height: 1.5;
-    
     width: 90vw;
     height: 90vh;
     margin: auto;
+    padding: 0;
   } 
+
   h1 {
     font-size: 30px;
   }
-  nav {
-    margin: 0;
-    overflow: hidden;
-  }
+nav ul ul li:first-child {
+ margin-top: 0px;
+}
 
-  nav ul {
-    max-height: 0;
-    background:  #254441;
-  }
-  
-  nav.black ul {
-    background:  #254441;
-  }
-  .showing {
-    max-height: 20em;
-  }
-  nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
+  /*Make dropdown links appear inline*/
+   /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
     }
-  
-  .menu-icon {
-    display: block;
-
-  }
-    nav ul li {
-      width: 100%;
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+        white-space: nowrap;
     }
-     #wrap {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 20px 20px 50px 50px rgba(100, 100, 100, 0.7) inset;
-  }
-  .project {
-    font-size: 20px;
-    padding: 5%;
-    line-height: 1.5em;
-  }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: block;
 
+    }
 
-  }
+    li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+    width: 90%;
+    }
+    
+}
 
 
 @media all and (max-width : 330px) {
-  nav ul li {
-    display: block;
-    width: 100%;
-  }
+ 
 footer {
  margin: auto;
  position: fixed;
@@ -417,4 +388,5 @@ footer {
     margin-top: 10px;
   }
  
+
 }
