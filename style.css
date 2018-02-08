@@ -322,8 +322,7 @@ nav ul ul li:first-child {
  margin-top: 0px;
 }
 
-  /*Make dropdown links appear inline*/
-   /*Make dropdown links appear inline*/
+    /*Make dropdown links appear inline*/
     ul {
         position: static;
         display: none;
@@ -350,7 +349,7 @@ nav ul ul li:first-child {
     color: #2f3036;
     height: 40px;
     line-height: 40px;
-    width: 90%;
+    width: 100%;
     }
     
 }
